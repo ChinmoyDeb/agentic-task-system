@@ -1,18 +1,54 @@
+```json
 [
   {
     "title": "Remote Work and Productivity",
-    "content": "Remote work can improve productivity when teams have strong communication practices, clear goals, and reliable tools."
+    "content": "Remote work can improve productivity when employees have clear goals, reliable digital collaboration tools, and effective communication practices. Organizations that establish measurable performance metrics often observe higher employee satisfaction and improved work-life balance."
   },
   {
     "title": "Hybrid Work Flexibility",
-    "content": "Hybrid work gives employees flexibility while preserving some in-person collaboration and team connection."
+    "content": "Hybrid work combines remote and office-based work, providing flexibility while maintaining opportunities for in-person collaboration. Successful hybrid models depend on transparent scheduling, equal access to resources, and consistent communication."
   },
   {
     "title": "Remote Work Risks",
-    "content": "Common risks of remote work include employee isolation, security concerns, and coordination overhead."
+    "content": "Common risks of remote work include employee isolation, cybersecurity threats, communication gaps, and coordination overhead. Organizations should provide mental health support, secure remote access, and regular team meetings."
   },
   {
     "title": "Team Communication",
-    "content": "Distributed teams need intentional communication habits, documentation, and regular check-ins to stay aligned."
+    "content": "Distributed teams rely on structured communication, documentation, virtual meetings, and collaboration platforms to remain aligned. Regular feedback and clearly defined responsibilities improve teamwork."
+  },
+
+  {
+    "title": "Cybersecurity Best Practices",
+    "content": "Organizations should implement strong password policies, multi-factor authentication, endpoint protection, and regular software updates. Security awareness training helps employees recognize phishing attacks and social engineering attempts."
+  },
+  {
+    "title": "Network Security",
+    "content": "Firewalls, intrusion detection systems, encryption, and secure network configurations reduce the likelihood of unauthorized access. Continuous monitoring enables organizations to identify suspicious activity quickly."
+  },
+  {
+    "title": "Cybersecurity Risks",
+    "content": "Cybersecurity threats include malware, ransomware, phishing, insider threats, and data breaches. Regular security audits, vulnerability assessments, and backup strategies help minimize business impact."
+  },
+  {
+    "title": "Incident Response",
+    "content": "A well-defined incident response plan enables organizations to detect, contain, investigate, recover from, and learn from cybersecurity incidents. Clear communication and documented procedures reduce recovery time."
+  },
+
+  {
+    "title": "Artificial Intelligence Overview",
+    "content": "Artificial Intelligence enables computer systems to perform tasks that normally require human intelligence, including learning, reasoning, pattern recognition, language understanding, and decision making."
+  },
+  {
+    "title": "Machine Learning",
+    "content": "Machine Learning is a branch of Artificial Intelligence that allows models to learn patterns from data without explicit programming. Supervised, unsupervised, and reinforcement learning are the primary learning paradigms."
+  },
+  {
+    "title": "Applications of Artificial Intelligence",
+    "content": "Artificial Intelligence is widely used in healthcare, finance, manufacturing, autonomous vehicles, recommendation systems, fraud detection, customer service, and natural language processing."
+  },
+  {
+    "title": "Challenges of Artificial Intelligence",
+    "content": "Major challenges include data privacy, algorithmic bias, model interpretability, security concerns, high computational costs, and ethical decision making. Responsible AI practices help address these issues."
   }
 ]
+```
