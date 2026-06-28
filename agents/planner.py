@@ -2,32 +2,81 @@ class PlannerAgent:
     """
     Planner Agent
 
-    Converts a complex user request into ordered subtasks.
-    This implementation is intentionally rule-based and transparent.
+    Converts a user request into an ordered sequence of tasks
+    using transparent rule-based planning.
     """
+
+    RETRIEVAL_KEYWORDS = {
+        "research", "find", "gather", "retrieve",
+        "search", "lookup", "collect", "discover"
+    }
+
+    ANALYSIS_KEYWORDS = {
+        "analyze", "analysis", "compare", "summarize",
+        "summary", "extract", "evaluate", "review",
+        "benefits", "risks", "advantages", "disadvantages",
+        "insights", "findings"
+    }
+
+    REPORT_KEYWORDS = {
+        "write", "generate", "report", "brief",
+        "document", "response", "answer"
+    }
+
+    def contains_keyword(self, request, keywords):
+        return any(keyword in request for keyword in keywords)
+
+    def add_step(self, steps, agent, description):
+        steps.append({
+            "id": len(steps) + 1,
+            "agent": agent,
+            "description": description
+        })
 
     def plan(self, user_request: str):
         request = user_request.lower()
         steps = []
 
-        if any(word in request for word in ["research", "find", "gather", "retrieve"]):
-            steps.append({
-                "id": len(steps) + 1,
-                "agent": "retriever",
-                "description": "Retrieve relevant information from the knowledge base"
-            })
+        retrieval_needed = self.contains_keyword(
+            request,
+            self.RETRIEVAL_KEYWORDS
+        )
 
-        if any(word in request for word in ["analyze", "compare", "summarize", "extract", "benefits", "risks"]):
-            steps.append({
-                "id": len(steps) + 1,
-                "agent": "analyzer",
-                "description": "Analyze retrieved information and extract themes and risks"
-            })
+        analysis_needed = self.contains_keyword(
+            request,
+            self.ANALYSIS_KEYWORDS
+        )
 
-        steps.append({
-            "id": len(steps) + 1,
-            "agent": "writer",
-            "description": "Generate the final response"
-        })
+        report_requested = self.contains_keyword(
+            request,
+            self.REPORT_KEYWORDS
+        )
+
+        if retrieval_needed:
+            self.add_step(
+                steps,
+                "retriever",
+                "Retrieve relevant documents from the knowledge base."
+            )
+
+        if retrieval_needed or analysis_needed:
+            self.add_step(
+                steps,
+                "analyzer",
+                "Analyze retrieved documents and extract findings."
+            )
+
+        if report_requested or not steps:
+            self.add_step(
+                steps,
+                "writer",
+                "Generate the final user-facing report."
+            )
+        else:
+            self.add_step(
+                steps,
+                "writer",
+                "Generate the final user-facing report."
+            )
 
         return steps
