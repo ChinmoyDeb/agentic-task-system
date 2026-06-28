@@ -121,10 +121,11 @@ class Orchestrator:
 
         await self.stream("\nPipeline finished.")
 
-        if "final_answer" not in context:context["final_answer"] = (
-        "The requested task could not be completed because the retriever "
-        "was unable to find relevant information after multiple retry attempts. "
-        "The pipeline terminated gracefully to avoid producing an inaccurate report."
-    )
+        if "final_answer" not in context:
+            context["final_answer"] = (
+                "The task could not be completed because no relevant information "
+                "was found in the knowledge base. After multiple retry attempts, "
+                "the retrieval step failed and the pipeline terminated gracefully."
+            )
 
         return context
