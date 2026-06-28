@@ -149,6 +149,282 @@ Enter a complex task:
 ```
 
 ---
+# Current Knowledge Base
+
+The current implementation supports queries **only** for the topics available in the local knowledge base.
+
+## Supported Topics
+
+### Remote Work
+
+* Remote Work
+* Hybrid Work
+* Employee Productivity
+* Team Communication
+* Collaboration
+* Flexibility
+* Work-Life Balance
+* Employee Isolation
+* Security Risks
+* Coordination Overhead
+
+### Cybersecurity
+
+* Cybersecurity Best Practices
+* Network Security
+* Firewalls
+* Encryption
+* Multi-Factor Authentication (MFA)
+* Endpoint Protection
+* Phishing
+* Malware
+* Ransomware
+* Insider Threats
+* Data Breaches
+* Incident Response
+* Security Awareness
+* Security Audits
+
+### Artificial Intelligence
+
+* Artificial Intelligence
+* Machine Learning
+* AI Applications
+* Healthcare AI
+* Finance AI
+* Recommendation Systems
+* Natural Language Processing (NLP)
+* Autonomous Vehicles
+* AI Challenges
+* Algorithmic Bias
+* Data Privacy
+* Ethical AI
+
+> **Note:** Queries outside these topics are not supported by the current knowledge base and will terminate gracefully after the retry mechanism.
+
+---
+
+# Copy-Paste Test Queries
+
+The following queries are fully supported by the current implementation and can be copied directly into the application.
+
+---
+
+## Remote Work
+
+```text
+Research remote work benefits, analyze the risks, and generate an executive report.
+```
+
+```text
+Research remote work productivity and generate a report.
+```
+
+```text
+Find information about remote work and summarize the findings.
+```
+
+```text
+Retrieve information about remote work and write a report.
+```
+
+```text
+Analyze remote work risks and generate an executive report.
+```
+
+```text
+Research hybrid work and summarize the findings.
+```
+
+```text
+Research hybrid work benefits and generate a report.
+```
+
+```text
+Find information about hybrid work flexibility.
+```
+
+```text
+Analyze team communication in remote work.
+```
+
+```text
+Research employee productivity in remote work.
+```
+
+```text
+Research collaboration in hybrid work.
+```
+
+```text
+Summarize remote work benefits.
+```
+
+```text
+Summarize hybrid work.
+```
+
+```text
+Compare remote work and hybrid work.
+```
+
+```text
+Evaluate remote work practices and generate a report.
+```
+
+---
+
+## Cybersecurity
+
+```text
+Research cybersecurity best practices and generate a report.
+```
+
+```text
+Research cybersecurity risks and generate an executive report.
+```
+
+```text
+Find information about network security.
+```
+
+```text
+Research phishing attacks and summarize the findings.
+```
+
+```text
+Analyze malware risks and generate a report.
+```
+
+```text
+Research ransomware threats.
+```
+
+```text
+Retrieve information about incident response.
+```
+
+```text
+Summarize network security.
+```
+
+```text
+Evaluate cybersecurity measures.
+```
+
+```text
+Generate a report on cybersecurity.
+```
+
+```text
+Research multi-factor authentication.
+```
+
+```text
+Research data breaches and summarize the findings.
+```
+
+---
+
+## Artificial Intelligence
+
+```text
+Research artificial intelligence and generate a report.
+```
+
+```text
+Research artificial intelligence applications.
+```
+
+```text
+Research machine learning and summarize the findings.
+```
+
+```text
+Find information about machine learning.
+```
+
+```text
+Research AI challenges and generate a report.
+```
+
+```text
+Analyze artificial intelligence applications.
+```
+
+```text
+Evaluate artificial intelligence.
+```
+
+```text
+Generate an executive report on artificial intelligence.
+```
+
+```text
+Research natural language processing.
+```
+
+```text
+Research recommendation systems.
+```
+
+```text
+Research autonomous vehicles.
+```
+
+```text
+Summarize artificial intelligence.
+```
+
+---
+
+## Multi-Step Queries
+
+```text
+Research remote work benefits, analyze the risks, and generate an executive report.
+```
+
+```text
+Research cybersecurity best practices, analyze the risks, and generate a report.
+```
+
+```text
+Research artificial intelligence applications, summarize the findings, and generate an executive report.
+```
+
+```text
+Find information about hybrid work, analyze the findings, and write a report.
+```
+
+```text
+Retrieve information about network security, summarize the findings, and generate a report.
+```
+
+```text
+Research machine learning, evaluate its applications, and generate a report.
+```
+
+---
+
+## Failure Test (Graceful Failure Demonstration)
+
+The following queries are **expected to fail gracefully** because they are outside the current knowledge base.
+
+```text
+Research Mars colonization using nuclear fusion and generate a report.
+```
+
+```text
+Research quantum computing and summarize the findings.
+```
+
+```text
+Research blockchain technology and generate a report.
+```
+
+```text
+Research climate change and analyze the risks.
+```
 
 # Workflow
 
