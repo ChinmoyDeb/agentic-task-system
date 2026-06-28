@@ -1,1 +1,10 @@
-pytest
+# Agentic AI Multi-Step Task System
+# Python Version: 3.10+
+
+# No third-party dependencies.
+# Uses only Python standard library modules:
+# - asyncio
+# - json
+# - re
+# - dataclasses
+# - typing
