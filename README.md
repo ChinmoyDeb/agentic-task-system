@@ -30,26 +30,30 @@ Instead of using frameworks such as LangChain, CrewAI, AutoGen, or LangGraph, ev
 
 # Project Structure
 
-```
+```text
 .
 ├── agents
-│   ├── analyzer.py
-│   ├── planner.py
-│   ├── retriever.py
-│   └── writer.py
+│   ├── analyzer.py          # Extracts themes, findings, risks, and keywords from retrieved documents.
+│   ├── planner.py           # Decomposes a user request into ordered tasks for specialized agents.
+│   ├── retriever.py         # Retrieves relevant documents from the local JSON knowledge base.
+│   └── writer.py            # Generates the final executive report from analyzed information.
 │
 ├── core
-│   ├── batching.py
-│   ├── orchestrator.py
-│   └── task.py
+│   ├── batching.py          # Groups tasks into manual execution batches based on dependencies.
+│   ├── orchestrator.py      # Coordinates planning, batching, execution, streaming, retries, and context management.
+│   └── task.py              # Defines the Task data model used throughout the execution pipeline.
 │
 ├── data
-│   └── knowledge_base.json
+│   └── knowledge_base.json  # Local knowledge base containing documents used by the Retriever Agent.
 │
-└── main.py
+├── README.md                # Project overview, setup instructions, architecture, and usage guide.
+├── SYSTEM_DESIGN.md         # Detailed system architecture, component design, and data flow documentation.
+├── POST_MORTEM.md           # Project reflection, design decisions, trade-offs, and future improvements.
+├── requirements.txt         # Project dependencies (standard library only).
+│
+└── main.py                  # Application entry point that accepts user input and starts the agent pipeline.
 ```
 
----
 ## Requirements
 
 * Python 3.9 or later
