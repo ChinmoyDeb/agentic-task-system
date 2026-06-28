@@ -50,6 +50,72 @@ Instead of using frameworks such as LangChain, CrewAI, AutoGen, or LangGraph, ev
 ```
 
 ---
+## Requirements
+
+* Python 3.9 or later
+* No external Python packages are required.
+* The project uses only Python's standard library.
+
+---
+
+# How to Run
+
+## 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd agentic-task-system
+```
+
+---
+
+## 2. (Optional) Create a Virtual Environment
+
+Although the project has no external dependencies, using a virtual environment is recommended.
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+## 3. Verify Python Version
+
+```bash
+python --version
+```
+
+Expected:
+
+```text
+Python 3.9+
+```
+
+---
+
+## 4. Run the Application
+
+```bash
+python main.py
+```
+
+The application will display:
+
+```text
+Agentic AI Multi-Step Task System
+---------------------------------
+Enter a complex task:
+```
 
 # System Architecture
 
